@@ -1,0 +1,17 @@
+{
+    "Personal_Questions_Memory" : 
+    {
+        "Name" : "Alice",
+        "Age" : "30",
+        "Hobby" : 
+        [
+            "Reading",
+            "Hiking",
+            "Cooking",
+		
+		],
+        "Custom" :
+        [
+        ],
+    }
+}

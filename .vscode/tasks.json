@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build Project (g++)",
+
+            // --- THIS IS THE FIX ---
+            // Corrected "msys664" back to "msys64"
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}\\src\\main.cpp",
+                
+                "${workspaceFolder}\\src\\menus.cpp",
+                "${workspaceFolder}\\src\\menus_Managment.cpp",
+
+                "${workspaceFolder}\\src\\String_Edit_Functions.cpp",
+                "${workspaceFolder}\\src\\Decision_Tree_Function.cpp",
+                "${workspaceFolder}\\src\\Decision_Tree.cpp",
+                "${workspaceFolder}\\src\\Tokens_To_Values.cpp",
+                "${workspaceFolder}\\src\\Json_And_C.cpp",
+                "${workspaceFolder}\\src\\String_To_Tokens.cpp",
+
+                "-I",
+                "${workspaceFolder}\\include",
+                "-o",
+                "${workspaceFolder}\\my_program.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Builds main.cpp and menus.cpp using correct Windows paths."
+        }
+    ]
+}
