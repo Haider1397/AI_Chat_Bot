@@ -1,6 +1,0 @@
-        "Name": "Alice",
-        "Age": "30",
-        "Hobby": "Painting",
-        "Custom":
-                "Question": "What is my favorite color?",
-                "Answer": "Blue"

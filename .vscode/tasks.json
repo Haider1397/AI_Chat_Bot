@@ -16,13 +16,8 @@
                 
                 "${workspaceFolder}\\src\\menus.cpp",
                 "${workspaceFolder}\\src\\menus_Managment.cpp",
-
-                "${workspaceFolder}\\src\\String_Edit_Functions.cpp",
-                "${workspaceFolder}\\src\\Decision_Tree_Function.cpp",
-                "${workspaceFolder}\\src\\Decision_Tree.cpp",
-                "${workspaceFolder}\\src\\Tokens_To_Values.cpp",
-                "${workspaceFolder}\\src\\Json_And_C.cpp",
-                "${workspaceFolder}\\src\\String_To_Tokens.cpp",
+                "${workspaceFolder}\\src\\String_To_Tokens_Functions.cpp",
+                "${workspaceFolder}\\src\\Responce_Managment.cpp",
 
                 "-I",
                 "${workspaceFolder}\\include",
