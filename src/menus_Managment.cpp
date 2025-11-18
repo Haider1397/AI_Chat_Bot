@@ -17,6 +17,7 @@ string Prompt_Input(){
 }
 void Menu_Managment(){
     bool New_Chat_Condition = true;
+    vector <string> responce;
     while(true)
     {
         if (New_Chat_Condition)
@@ -27,9 +28,8 @@ void Menu_Managment(){
         else
         {   
             string prompt = Prompt_Input();
-            Prompt_Managment_System(prompt);
-
-            Output_Display_Menu("Hello How Eare you"); // Placeholder for output
+            responce = Responce_Managment_System(prompt);
+            Output_Display_Menu(responce);
         }
 
     }

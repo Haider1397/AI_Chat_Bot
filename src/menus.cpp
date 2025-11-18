@@ -13,9 +13,12 @@ void Main_Menu()
     cout << endl;
     cout << "How can I assist you today?" << endl;
 }
-void Output_Display_Menu( string output)
+void Output_Display_Menu( vector <string> output)
 {
-    cout << "Output: " << output << endl;
+    for (int i = 0; i < output.size(); i++){
+        cout << output[i] << endl;
+    }
+    
 }
 void New_Chat_Menu()
 {

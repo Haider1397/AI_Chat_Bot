@@ -73,6 +73,7 @@ vector <vector<int>> Possible_Topic_In_Json(vector<string> tokens, string json_f
                 points++;         
             }
         }
+        //cout<<points<<"\t"<< size <<endl;
         Points_Calculation = ((float)points / size)*100;
         if(points != 0)
             Possible_Topics.push_back({line_number, static_cast<int>(Points_Calculation)});
@@ -126,18 +127,19 @@ vector <string> detail_Extration_From_Json(vector <vector<int>> Possible_Topics,
 
     return line;
 }
-void Prompt_Managment_System(string prompt){
-    vector <string> line;
+vector <string> Responce_Managment_System(string prompt){
+    vector <string> responce;
+
     string json_file_path = "data/Content.json";
     vector<string> tokens = Processed_String_To_Token(prompt);
+
     vector <vector<int>> Possible_Topics;
-    Possible_Topics = Possible_Topic_In_Json(tokens, json_file_path);
-    line = detail_Extration_From_Json(Possible_Topics, json_file_path);
-    for (int i = 0; i < line.size(); i++)
-    {
-        cout << line[i] << endl;
-    }
     
+    Possible_Topics = Possible_Topic_In_Json(tokens, json_file_path);
+    Possible_Topics = Arange_Possible_Topics_Decending(Possible_Topics);
+    
+    responce = detail_Extration_From_Json(Possible_Topics, json_file_path);
+    return responce;
 }
 
 

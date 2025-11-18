@@ -380,6 +380,6 @@ vector<string> Processed_String_To_Token(string str){
 }
 string Clean_Json_Details(string str){
     str = Seprate_After_Colon(str);
-    str = str.substr(2, str.length());
+    str = str.substr(2, str.length()-6);
     return str;
 }

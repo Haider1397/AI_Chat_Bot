@@ -7,7 +7,7 @@ using namespace std;
 #define MENUS_H
 
 void Main_Menu();
-void Output_Display_Menu( string output);
+void Output_Display_Menu( vector <string> output);
 void New_Chat_Menu();
 
 #endif // MENUS_H
