@@ -6,9 +6,6 @@
 
 using namespace std;
 
-#ifndef String_Cleaning_Functions
-#define String_Cleaning_Functions
-
 string Remove_qoutes(string str) {
     if (str.length() >= 2 && str.front() == '\"' && str.back() == '\"') {
         return str.substr(1, str.length() - 2);
@@ -200,7 +197,6 @@ string clean_string(string str) {
     str = remove_at_symbol(str);
     return str;
 }
-#endif // String_Cleaning_Functions
 vector<string> Clean_Array_of_Strings(vector<string> str_array){
     int total_strings = str_array.size();
     for (int i = 0; i < total_strings; i++)
@@ -381,4 +377,9 @@ vector<string> Processed_String_To_Token(string str){
     tokens = Clean_Array_of_Strings(tokens);
     tokens = Remove_Common_Words(tokens);
     return tokens;
+}
+string Clean_Json_Details(string str){
+    str = Seprate_After_Colon(str);
+    str = str.substr(2, str.length());
+    return str;
 }

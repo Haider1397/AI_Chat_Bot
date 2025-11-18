@@ -7,6 +7,7 @@ using namespace std;
 #define String_To_Tokens_Functions
 
 vector<string> Processed_String_To_Token(string str);
+string Clean_Json_Details(string str);
 
 
 #endif // String_To_Tokens_Functions
