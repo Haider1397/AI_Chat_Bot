@@ -18,6 +18,7 @@
                 "${workspaceFolder}\\src\\menus_Managment.cpp",
                 "${workspaceFolder}\\src\\String_To_Tokens_Functions.cpp",
                 "${workspaceFolder}\\src\\Responce_Managment.cpp",
+                "${workspaceFolder}\\src\\File_to_String.cpp",
 
                 "-I",
                 "${workspaceFolder}\\include",

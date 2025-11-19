@@ -6,16 +6,15 @@
 #include "../include/menus.h"
 #include "../include/String_To_Tokens_Functions.h"
 #include "../include/Responce_Managment.h"
+#include "../include/File_to_String.h"
 
 using namespace std;
 
-string Prompt_Input(){
-    string prompt;
-    cout << "User: ";
-    getline(cin, prompt);
-    return prompt;
-}
+vector <string> File;
+string json_file_path = "data/Content.json";
+
 void Menu_Managment(){
+    File = File_To_String(json_file_path);
     bool New_Chat_Condition = true;
     vector <string> responce;
     while(true)
