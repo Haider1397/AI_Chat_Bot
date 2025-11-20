@@ -22,7 +22,7 @@ vector <string> File_To_String(string json_file_path){
     string line;
     ifstream file(json_file_path);
     if (!file.is_open()) {
-        cerr << "Error opening file: " << json_file_path << endl;
+        cout << "Error opening file: " << json_file_path << endl;
         return {};
     }
     while (getline(file, line)) {
