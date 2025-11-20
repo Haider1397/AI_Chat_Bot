@@ -75,6 +75,7 @@ vector <string> Extract_Topic_Details_From_Json(vector <vector<int>> Possible_To
         {
             for(Topic_Line_Number; Topic_Line_Number < File.size(); Topic_Line_Number++)
             {
+                //cout<<File[Topic_Line_Number]<<endl;
                 if (File[Topic_Line_Number].find("version_1") != string::npos)
                 {
                     line.push_back(Clean_Json_Details(File[Topic_Line_Number]));
@@ -89,6 +90,7 @@ vector <string> Extract_Topic_Details_From_Json(vector <vector<int>> Possible_To
         {
             for(Topic_Line_Number; Topic_Line_Number < File.size(); Topic_Line_Number++)
             {
+                //cout<<File[Topic_Line_Number]<<endl;
                 if (File[Topic_Line_Number].find("version_2") != string::npos)
                 {
                     line.push_back(Clean_Json_Details(File[Topic_Line_Number]));
@@ -103,6 +105,7 @@ vector <string> Extract_Topic_Details_From_Json(vector <vector<int>> Possible_To
         {
             for(Topic_Line_Number; Topic_Line_Number < File.size(); Topic_Line_Number++)
             {
+                //cout<<File[Topic_Line_Number]<<endl;
                 if (File[Topic_Line_Number].find("version_3") != string::npos)
                 {
                     line.push_back(Clean_Json_Details(File[Topic_Line_Number]));
@@ -116,6 +119,7 @@ vector <string> Extract_Topic_Details_From_Json(vector <vector<int>> Possible_To
         {
             for(Topic_Line_Number; Topic_Line_Number < File.size(); Topic_Line_Number++)
             {
+                //cout<<File[Topic_Line_Number]<<endl;
                 if (File[Topic_Line_Number].find("version_4") != string::npos)
                 {
                     line.push_back(Clean_Json_Details(File[Topic_Line_Number]));
@@ -129,6 +133,7 @@ vector <string> Extract_Topic_Details_From_Json(vector <vector<int>> Possible_To
         {
             for(Topic_Line_Number; Topic_Line_Number < File.size(); Topic_Line_Number++)
             {
+                //cout<<File[Topic_Line_Number]<<endl;
                 if (File[Topic_Line_Number].find("version_5") != string::npos)
                 {
                     line.push_back(Clean_Json_Details(File[Topic_Line_Number]));
